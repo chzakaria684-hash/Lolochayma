@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+  <body>
+      <p>page1</p>
+  </body>
+</html<!DOCTYPE html><html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Cadeau</title><style>body{margin:0;font-family:Arial,sans-serif;background:linear-gradient(180deg,#ffc0da,#ff8fb1);color:#fff;text-align:center;overflow:hidden} .screen{display:none;min-height:100vh;padding:20px;box-sizing:border-box;justify-content:center;align-items:center;flex-direction:column}.active{display:flex}.btn{background:#c2185b;border:none;color:#fff;padding:14px 20px;border-radius:999px;font-size:16px;margin:10px;max-width:90%;box-shadow:0 8px 20px rgba(0,0,0,.2)}img{max-width:88vw;max-height:55vh;border-radius:22px;box-shadow:0 10px 30px rgba(0,0,0,.25)}.msg{font-size:22px;font-weight:bold;margin-bottom:20px}.small{font-size:18px}</style></head><body>
+<div id='s1' class='screen active'><div class='msg'>Bonsoir, Miss des Miss, beauté parmi les beautés, diamant, gazelle. Repose-toi maintenant, et je combattrai le monde seul pour toi. Olala🌹</div><button class='btn' onclick='next(2)'>Cliquez ici, mademoiselle chayma</button></div>
+<div id='s2' class='screen'><img src='file_00000000718071f897d367cbf1d09215'><button class='btn' onclick='next(3)'>Oh mon Dieu, que tu es belle !</button></div>
+<div id='s3' class='screen'><img src='file_0000000069bc71fda2a4a947718223f3'><button class='btn' id='runBtn'>Je vous prie de m'excuser le plus sincèrement. Laissez-moi m'occuper de tout ; je gérerai tout moi-même pour vous.</button></div>
+<div id='s4' class='screen'><img src='file_00000000317471f8858902dedb422de1'><audio id='song' controls autoplay src=''></audio><div class='small'>Ajoutez le fichier mp3 de Taylor Swift ici.</div></div>
+<script>function next(n){document.querySelectorAll('.screen').forEach(x=>x.classList.remove('active'));document.getElementById('s'+n).classList.add('active');if(n===4){document.getElementById('song').play().catch(()=>{});}}let tries=0;const b=document.getElementById('runBtn');b.addEventListener('click',()=>{tries++;if(tries<5){b.style.position='absolute';b.style.left=Math.random()*60+'vw';b.style.top=Math.random()*70+'vh';}else next(4);});</script></body></html>
